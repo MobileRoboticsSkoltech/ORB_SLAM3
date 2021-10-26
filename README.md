@@ -1,5 +1,11 @@
 # ORB-SLAM3
 
+`mrob_patches` branch contains 
+- `mono_some.cc` and `smartphone_camera.yaml` in `Examples/Monocular/`
+- `mono_inertial_some.cc` and `smartphone_camera_sm_imu.yaml` in `Examples/Monocular-Inertial/`
+
+for work with our smartphone images.
+
 ### V0.4: Beta version, 21 April 2021
 **Authors:** Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
 
