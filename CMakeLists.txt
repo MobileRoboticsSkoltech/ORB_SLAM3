@@ -172,6 +172,16 @@ add_executable(mono_tum_vi
 Examples/Monocular/mono_tum_vi.cc)
 target_link_libraries(mono_tum_vi ${PROJECT_NAME})
 
+########
+add_executable(mono_some
+Examples/Monocular/mono_some.cc)
+target_link_libraries(mono_some ${PROJECT_NAME})
+
+add_executable(mono_euroc2
+Examples/Monocular/mono_euroc2.cc)
+target_link_libraries(mono_euroc2 ${PROJECT_NAME})
+########
+
 # Monocular-Inertial examples
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular-Inertial)
 
@@ -182,6 +192,10 @@ target_link_libraries(mono_inertial_euroc ${PROJECT_NAME})
 add_executable(mono_inertial_tum_vi
 Examples/Monocular-Inertial/mono_inertial_tum_vi.cc)
 target_link_libraries(mono_inertial_tum_vi ${PROJECT_NAME})
+
+add_executable(mono_inertial_some
+Examples/Monocular-Inertial/mono_inertial_some.cc)
+target_link_libraries(mono_inertial_some ${PROJECT_NAME})
 
 # Stereo-Inertial examples
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Stereo-Inertial)
