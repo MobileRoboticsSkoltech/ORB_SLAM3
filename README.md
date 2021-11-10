@@ -1,3 +1,33 @@
+# What to do for our dataset paper
+
+- Use `mrob_patches` branch of this repo
+- Use our [smartphone-data-copier](https://github.com/MobileRoboticsSkoltech/smartphone-data-copier)
+  for symlinking bag-extracted data from bag-extractor and creating correct single imu file for a sequence.
+- Use our [V-VI-methods-calibration-paprams](https://github.com/MobileRoboticsSkoltech/V-VI-methods-calibration-paprams) for system params
+
+# How to launch
+
+These examples give you understanding what to put as arguments:
+- Mono (if launching inside root folder of repo)
+```
+./Examples/Monocular/mono_some
+    ./Vocabulary/ORBvoc.txt
+    <param folder>/smartphone_camera.yaml
+    <smartphone-data-copier generated sequence folder>/cam0/
+    <smartphone-data-copier generated sequence folder>/image_timestamps.txt     
+    <name of output trajectory without any file extention. For instance, seq_1 will lead to f_seq_1.txt and kf_seq_1.txt> 
+```
+- Mono-inertial (if launching inside root folder of repo)
+```
+./Examples/Monocular-Inertial/mono_inertial_some
+    ./Vocabulary/ORBvoc.txt
+    <param folder>/smartphone_camera_sm_imu.yaml
+    <smartphone-data-copier generated sequence folder>/cam0/
+    <smartphone-data-copier generated sequence folder>/image_timestamps.txt
+    <smartphone-data-copier generated sequence folder>/imu0.csv
+    <name of output trajectory without any file extention. For instance, seq_1 will lead to f_seq_1.txt and kf_seq_1.txt>
+```
+
 # ORB-SLAM3
 
 `mrob_patches` branch contains 
