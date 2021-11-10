@@ -28,6 +28,8 @@ These examples give you understanding what to put as arguments:
     <name of output trajectory without any file extention. For instance, seq_1 will lead to f_seq_1.txt and kf_seq_1.txt>
 ```
 
+That is it. Below is original ORB-SLAM 3 documentation.
+
 # ORB-SLAM3
 
 `mrob_patches` branch contains 
